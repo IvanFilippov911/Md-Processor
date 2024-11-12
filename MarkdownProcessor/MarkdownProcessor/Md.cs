@@ -1,13 +1,9 @@
-﻿using MarkdownProcessorLib.Tools;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MarkdownProcessorLib.Services;
+
 
 namespace MarkdownProcessorLib;
 
-class Md
+public class Md
 {
     public string Render(string text)
     {

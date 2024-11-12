@@ -1,23 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace MarkdownProcessorLib.Models;
 
-namespace MarkdownProcessorLib.Models;
-
-public class Block
-{
-    public BlockType Type { get; }
-    public string Value { get; }
-    
-    public Block(string value, BlockType type)
-    {
-        Value = value;
-        Type = type;
-    }
-}
-
+public record Block(string Value, BlockType Type);
 
 public enum BlockType
 {
@@ -25,5 +8,5 @@ public enum BlockType
     Italic,
     Bold,
     Heading,
-    Escape
+    Shielding
 }
